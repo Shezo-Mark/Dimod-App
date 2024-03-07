@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Dimond App</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+<section class="section_main">
+  <div class="container">
+    <div class="header">
+      <h1 id="title" class="text-center fw-bolder">New Customer</h1>
+  </div>
+    <div class="form-wrap">
+      <form action="/action_page.php">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <input type="text" name="refer-by" oninput="this.className = ''" id="referred-by" placeholder="Enter your Referred By" class="form-control">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <input type="text" name="f-name" oninput="this.className = ''" id="f-name" placeholder="Enter your first name" class="form-control">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <input type="text" name="l-name" oninput="this.className = ''" id="l-name" placeholder="Enter your last name" class="form-control">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <input type="text" name="p-number" oninput="this.className = ''" id="p-number" placeholder="Enter your last phone number" class="form-control">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <input type="text" name="email" oninput="this.className = ''" id="email" placeholder="Enter your email" class="form-control">
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="form-group">
+                <select id="dropdown" name="role" oninput="this.className = 'form-control'">
+                    <option disabled selected value>Select</option>
+                    <option value="Driver-License">Driver License</option>
+                    <option value="Identification">Identification #</option>
+                    <option value="Passport">Passport</option>
+                    <option value="out-of-state-license">out of state license</option>
+                    <option value="international-license">international license</option>
+                    <option value="no-identification">no identification</option>
+                </select>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <input type="submit" class="btn btn-primary w-100" id="nextBtn" value="Submit">
+            </div>
+          </div>
+          
+        </div>
+
+      </form>
+    </div>
+  </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- <script src="./assets/script/main.js"></script> -->
+</body>
+</html>

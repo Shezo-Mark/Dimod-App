@@ -72,9 +72,6 @@ function fixStepIndicator(n) {
   x[n].className += " active";
 }
 
-
-
-
 // form hidden written by hamza code
 function chechBoxtoggle(checkboxId, sectionId, inputId) {
   const checkbox = document.getElementById(checkboxId);

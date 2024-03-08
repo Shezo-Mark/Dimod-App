@@ -219,6 +219,7 @@ body {
     Form Section
 \*--------------*/
 .section_main {
+  padding: 100px 0px;
   display: flex;
   align-items: center;
 }

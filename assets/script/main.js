@@ -78,7 +78,7 @@ function fixStepIndicator(n) {
 
 
 // form hidden written by hamza code
-function toggleSection(checkboxId, sectionId, inputId) {
+function chechBoxtoggle(checkboxId, sectionId, inputId) {
   const checkbox = document.getElementById(checkboxId);
   const hiddenSection = document.getElementById(sectionId);
   const hiddenInput = document.getElementById(inputId);
@@ -92,4 +92,5 @@ function toggleSection(checkboxId, sectionId, inputId) {
     }
   });
 }
-toggleSection('check_mail', 'section_mail', 'input_mail');
+chechBoxtoggle('check_mail', 'section_mail', 'input_mail');
+chechBoxtoggle('check_new_customer', 'section_new_customer', 'input_new_customer');

@@ -71,3 +71,25 @@ function fixStepIndicator(n) {
   //... and adds the "active" class on the current step:
   x[n].className += " active";
 }
+
+
+
+
+
+
+// form hidden written by hamza code
+function toggleSection(checkboxId, sectionId, inputId) {
+  const checkbox = document.getElementById(checkboxId);
+  const hiddenSection = document.getElementById(sectionId);
+  const hiddenInput = document.getElementById(inputId);
+  checkbox.addEventListener('change', function() {
+    if (this.checked) {
+      hiddenSection.classList.add('hidden_form');
+      hiddenInput.removeAttribute('required');
+    } else {
+      hiddenSection.classList.remove('hidden_form');
+      hiddenInput.setAttribute('required', 'true');
+    }
+  });
+}
+toggleSection('check_mail', 'section_mail', 'input_mail');

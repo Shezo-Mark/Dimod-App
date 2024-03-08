@@ -95,41 +95,45 @@
                     placeholder="Enter your Zip Code" class="form-control form-control-1">
                 </div>
               </div>
+
+
+              <!-- first hidden form -->
               <h6 id="title" class="text-center fw-bolder">Mailing Address</h6>
               <div class="col-md-12">
                 <div class="checkbox">
                   <div class="form-group flex_align">
-                    <input type="checkbox" value="Click here if same" name="click-same" id="milling">
-                    <label for="milling"> Click here if same</label>
+                    <input type="checkbox" value="Click here if same" name="click-same" id="check_mail">
+                    <label for="check_mail"> Click here if same</label>
                   </div>
                 </div>
               </div>
-                <div class="hidden_form row">
-                  <div class="col-md-6">
+              <!-- hidden form  -->
+                <div class=" row" id="section_mail">
+                  <div class="col-md-6" id="input_mail">
                     <div class="form-group">
                       <input type="text" name="street-address-1" class="form-control"
                         id="street-address-1" placeholder="Enter your street address 1" class="form-control">
                     </div>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-6" id="input_mail">
                     <div class="form-group">
                       <input type="text" name="street-address-2" oninput="this.className = 'form-control'"
                         id="street-address-2" placeholder="Enter your street address 2" class="form-control">
                     </div>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-6" id="input_mail">
                     <div class="form-group">
                       <input type="text" name="City-address" oninput="this.className = 'form-control'" id="City-address"
                         placeholder="Enter your City" class="form-control">
                     </div>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-6" id="input_mail">
                     <div class="form-group">
                       <input type="text" name="State-address" oninput="this.className = 'form-control'" id="State-address"
                         placeholder="Enter your State" class="form-control">
                     </div>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-6" id="input_mail">
                     <div class="form-group">
                       <input type="number" name="zip-code" oninput="this.className = 'form-control'" id="zip-code"
                         placeholder="Enter your Zip Code" class="form-control">
@@ -138,87 +142,93 @@
                 </div>
               <h6 id="title" class="text-center fw-bolder">Transaction section</h6>
               <div class="col-md-12">
-                <div class="form-group flex_align">
-                  <input type="checkbox" value="Click here if same" name="TRANSFER" id="TRANSFER">
-                  <label for="TRANSFER"> CLICK TO TRANSFER FROM NEW CUSTOMER</label>
+                <div class="checkbox">
+                  <div class="form-group flex_align">
+                    <input type="checkbox" value="Click here if same" name="TRANSFER" id="TRANSFER">
+                    <label for="TRANSFER"> CLICK TO TRANSFER FROM NEW CUSTOMER</label>
+                  </div>
                 </div>
               </div>
               <h6 id="title" class="text-center fw-bolder">new register owner</h6>
               <div class="col-md-12">
-                <div class="form-group flex_align">
-                  <input type="checkbox" value="Click here if same" name="new-customer" id="new-customer">
-                  <label for="new-customer"> Click here to populate from new customer</label>
+                <div class="checkbox">
+                  <div class="form-group flex_align">
+                    <input type="checkbox" value="Click here if same" name="new-customer" id="check_new_customer">
+                    <label for="check_new_customer"> Click here to populate from new customer</label>
+                  </div>
                 </div>
               </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <input type="text" name="f-name" oninput="this.className = 'form-control form-control-1'" id="f-name"
-                    placeholder="Enter your first name" class="form-control form-control-1">
+              <div class="row" id="section_new_customer">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="text" name="f-name" oninput="this.className = 'form-control form-control-1'" id="f-name"
+                      placeholder="Enter your first name" class="form-control form-control-1">
+                  </div>
                 </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <input type="text" name="l-name" oninput="this.className = 'form-control form-control-1'" id="l-name"
-                    placeholder="Enter your last name" class="form-control form-control-1">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="text" name="l-name" oninput="this.className = 'form-control form-control-1'" id="l-name"
+                      placeholder="Enter your last name" class="form-control form-control-1">
+                  </div>
                 </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <input type="text" name="p-number" oninput="this.className = 'form-control form-control-1'" id="p-number"
-                    placeholder="Enter your last phone number" class="form-control form-control-1">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="text" name="p-number" oninput="this.className = 'form-control form-control-1'" id="p-number"
+                      placeholder="Enter your last phone number" class="form-control form-control-1">
+                  </div>
                 </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <input type="date" name="Purchased-Date" oninput="this.className = 'form-control form-control-1'" id="Purchased-Date"
-                    placeholder="Enter your Purchased Date" class="form-control form-control-1">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="date" name="Purchased-Date" oninput="this.className = 'form-control form-control-1'" id="Purchased-Date"
+                      placeholder="Enter your Purchased Date" class="form-control form-control-1">
+                  </div>
                 </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <input type="number" name="purchase-price" oninput="this.className = 'form-control form-control-1'" id="purchase-price"
-                    placeholder="Enter your purchase price" class="form-control form-control-1">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="number" name="purchase-price" oninput="this.className = 'form-control form-control-1'" id="purchase-price"
+                      placeholder="Enter your purchase price" class="form-control form-control-1">
+                  </div>
                 </div>
-              </div>
-              <div class="col-md-12">
-                <div class="form-group">
-                  <select id="dropdown" name="role" oninput="this.className = 'form-control form-control-1'" class="form-control form-control-1">
-                    <option disabled selected value>Select</option>
-                    <option value="Driver-License">Driver License</option>
-                    <option value="Identification">Identification #</option>
-                    <option value="Passport">Passport</option>
-                    <option value="out-of-state-license">out of state license</option>
-                    <option value="international-license">international license</option>
-                    <option value="no-identification">no identification</option>
-                  </select>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <select id="dropdown" name="role" oninput="this.className = 'form-control form-control-1'" class="form-control form-control-1">
+                      <option disabled selected value>Select</option>
+                      <option value="Driver-License">Driver License</option>
+                      <option value="Identification">Identification #</option>
+                      <option value="Passport">Passport</option>
+                      <option value="out-of-state-license">out of state license</option>
+                      <option value="international-license">international license</option>
+                      <option value="no-identification">no identification</option>
+                    </select>
+                  </div>
                 </div>
               </div>
               <h6 id="title" class="text-center fw-bolder">Mailing Address</h6>
-              <div class="col-md-6">
+              <div class="col-md-6" id="input_new_customer">
                 <div class="form-group">
                   <input type="text" name="street-address-1" oninput="this.className = 'form-control form-control-1'"
                     id="street-address-1" placeholder="Enter your street address 1" class="form-control form-control-1">
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-6" id="input_new_customer">
                 <div class="form-group">
                   <input type="text" name="street-address-2" oninput="this.className = 'form-control form-control-1'"
                     id="street-address-2" placeholder="Enter your street address 2" class="form-control form-control-1">
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-6" id="input_new_customer">
                 <div class="form-group">
                   <input type="text" name="City-address" oninput="this.className = 'form-control form-control-1'" id="City-address"
                     placeholder="Enter your City" class="form-control form-control-1">
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-6" id="input_new_customer">
                 <div class="form-group">
                   <input type="text" name="State-address" oninput="this.className = 'form-control form-control-1'" id="State-address"
                     placeholder="Enter your State" class="form-control form-control-1">
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-6" id="input_new_customer">
                 <div class="form-group">
                   <input type="number" name="zip-code" oninput="this.className = 'form-control form-control-1'" id="zip-code"
                     placeholder="Enter your Zip Code" class="form-control form-control-1">

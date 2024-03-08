@@ -73,3 +73,22 @@ function fixStepIndicator(n) {
 }
 
 
+
+
+// form hidden written by hamza code
+function chechBoxtoggle(checkboxId, sectionId, inputId) {
+  const checkbox = document.getElementById(checkboxId);
+  const hiddenSection = document.getElementById(sectionId);
+  const hiddenInput = document.getElementById(inputId);
+  checkbox.addEventListener('change', function() {
+    if (this.checked) {
+      hiddenSection.classList.add('hidden_form');
+      hiddenInput.removeAttribute('required');
+    } else {
+      hiddenSection.classList.remove('hidden_form');
+      hiddenInput.setAttribute('required', 'true');
+    }
+  });
+}
+chechBoxtoggle('check_mail', 'section_mail', 'input_mail');
+chechBoxtoggle('check_new_customer', 'section_new_customer', 'input_new_customer');
